@@ -7,7 +7,7 @@ st.title("Plotly Visualizations!!!")
 # Data For Charts
 covid = pd.read_csv("Covid_death_DATA.csv")
 co2 = pd.read_csv("co2_emission_data.csv")
-sb = pd.read_csv("Starbucks_satisfactory_survey_DATA.csv")
+sb = pd.read_csv("Starbucks satisfactory survey_DATA.csv")
 
 fig1 = px.scatter(co2, x="Year", y="Co2 Emission", color="Country", hover_name="Country", title="Yearly Co2 Emission by Country")
 fig2 = px.histogram(co2, x="Year", y="Co2 Emission", color="Country", title="Co2 Emission per Year", hover_name="Country")
